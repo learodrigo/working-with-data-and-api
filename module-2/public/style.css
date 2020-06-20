@@ -3,6 +3,14 @@ html {
   font-size: 16px;
 }
 
+body {
+  margin: 0 48px;
+}
+
+h1 {
+  margin-block-start: 4px;
+}
+
 .error {
   border-color: red;
 }
@@ -15,17 +23,91 @@ p b {
   font-size: 1rem;
 }
 
-.required::after {
-  content: '*';
-  color: red;
-  font-weight: bold;
+.latitude {
+  border-bottom: 2px solid #892202;
+  color: #892202;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+.longitude {
+  border-bottom: 2px solid #04387c;
+  color: #04387c;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
 }
 
 input,
 input:focus {
   border: 1px solid gray;
   border-radius: 8px;
-  min-height: 26px;
+  min-height: 34px;
   outline: none;
-  padding: 2px 8px;
+  padding: 2px 24px;
+}
+
+button {
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+}
+
+.list {
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 25%;
+}
+
+.list:last-child {
+  margin-bottom: 72px;
+}
+
+.mood {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.geo {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.date {
+  font-size: 0.75rem;
+}
+
+.paragraph {
+  display: block;
+  font-size: 1.2rem;
+  margin: 32px 0;
+  width: 35%;
+}
+
+#nav {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 32px;
+}
+#nav a {
+  color: blue;
+  text-decoration: none;
+}
+#nav a:hover {
+  text-decoration: line-through;
+}
+
+@media all and (max-width:1267px) {
+  .list {width: 33%}
+}
+@media all and (max-width:1023px) {
+  .list {width: 50%}
+}
+@media all and (max-width:767px) {
+  .list {width: 100%}
 }
