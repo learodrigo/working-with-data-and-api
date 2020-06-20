@@ -7,6 +7,10 @@ body {
   margin: 0 48px;
 }
 
+.container {
+
+}
+
 h1 {
   margin-block-start: 4px;
 }
@@ -90,7 +94,7 @@ button {
   display: block;
   font-size: 1.2rem;
   margin: 32px 0;
-  width: 35%;
+  width: 25%;
 }
 
 #nav {

@@ -14,24 +14,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
   </head>
   <body>
-    <span id="nav"><a href="/all.html">Check full list</a></span>
-    <h1>Data selfie app</h1>
-    <p class="paragraph">
-      This are the coordenates where you are right now.
-      The input is free to put whatever you want, and once
-      you press submit, a new entry will be generated
-      with all these values plus when it was generated.
-      You can check the full list from the blue navigation.
-    </p>
-    <p class="latitude">Latitude:&nbsp;&nbsp;<b id="latitude"></b>&deg;</p>
-    <br>
-    <p class="longitude">Longitude:&nbsp;<b id="longitude"></b>&deg;</p>
-    <br>
-    <br>
-    <label for="mood" class="hidden">Enter your mood</label>
-    <input id="mood" placeholder="Enter your mood..." />
-    <p><button id="submitButton" type="button" name="button">Submit</button></p>
+    <div class="container">
+      <span id="nav"><a href="/logos/index.html">Check full list</a></span>
+      <h1>Data selfie app</h1>
+      <p class="paragraph">
+        This are the coordenates where you are right now.
+        The input is free to put whatever you want, and once
+        you press submit, a new entry will be generated
+        with all these values plus when it was generated.
+        You can check the full list from the blue navigation.
+      </p>
+      <p class="latitude">Latitude:&nbsp;&nbsp;<b id="latitude"></b>&deg;</p>
+      <br>
+      <p class="longitude">Longitude:&nbsp;<b id="longitude"></b>&deg;</p>
+      <br>
+      <br>
+      <label for="mood" class="hidden">Enter your mood</label>
+      <input id="mood" placeholder="Enter your mood..." />
+      <p><button id="submitButton" type="button" name="button">Submit</button></p>
+    </div>
 
-    <script src="scriptIndex.js"></script>
+    <script src="sketch.js"></script>
   </body>
 </html>
