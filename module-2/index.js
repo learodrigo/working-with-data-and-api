@@ -14,13 +14,17 @@ app.post('/api', (request, response) => {
   const data = request.body
   const timestamp = Date.now()
   data.timestamp = timestamp
-
   database.insert(data)
+  response.json(data)
+})
 
-  response.json({
-    status: 'success',
-    timestamp: timestamp,
-    latitude: data.lat,
-    longitude: data.lon
+app.get('/api', (request, response) => {
+  database.find({}, (error, data) => {
+    if (error) {
+      console.error(error)
+      response.end()
+      return
+    }
+    response.json(data)
   })
 })
