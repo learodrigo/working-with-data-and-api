@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SSJS: SSJS with Node.js</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <span id="nav"><a href="/logos/index.html">Check full list</a></span>
+      <h1>Data selfie app</h1>
+      <p class="paragraph">
+        This are the coordenates where you are right now.
+        The input is free to put whatever you want, and once
+        you press submit, a new entry will be generated
+        with all these values plus when it was generated.
+        You can check the full list from the blue navigation.
+      </p>
+      <p class="latitude">Latitude:&nbsp;&nbsp;<b id="latitude"></b>&deg;</p>
+      <br>
+      <p class="longitude">Longitude:&nbsp;<b id="longitude"></b>&deg;</p>
+      <br>
+      <br>
+      <label for="mood" class="hidden">Enter your mood</label>
+      <input id="mood" placeholder="Enter your mood..." />
+      <p><button id="submitButton" type="button" name="button">Submit</button></p>
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>

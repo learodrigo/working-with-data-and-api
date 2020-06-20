@@ -15,9 +15,9 @@ The course is divided in 3 sections:
 
 # About the projects
 1. Introductory
-  1. Understanding fetch
-  2. Use of csv data for representing a graph
-  3. Use of JSON to preview the current location of ISS with leafletjs
+  * Understanding fetch
+  * Use of csv data for representing a graph
+  * Use of JSON to preview the current location of ISS with leafletjs
 2. The Data Selfie App
 3. The Weather Here
 
