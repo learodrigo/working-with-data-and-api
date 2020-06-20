@@ -10,11 +10,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
     <link rel="manifest" href="../../favicon/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
   </head>
   <body>
     <h1>Data selfie app</h1>
-    <p>Latitude: <span id="latitude"></span>&deg;</p>
-    <p>Longitude: <span id="longitude"></span>&deg;</p>
+    <p>Latitude:&nbsp;&nbsp;<b id="latitude"></b>&deg;</p>
+    <p>Longitude:&nbsp;<b id="longitude"></b>&deg;</p>
+    <label for="mood" class="required">Enter your mood</label>
+    <input id="mood" placeholder="Whatever you want" />
+    <p><button id="submitButton" type="button" name="button">Submit</button></p>
 
     <script src="script.js"></script>
   </body>

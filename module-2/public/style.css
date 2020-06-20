@@ -1,3 +1,31 @@
 html {
   font-family: monospace;
+  font-size: 16px;
+}
+
+.error {
+  border-color: red;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+p b {
+  font-size: 1rem;
+}
+
+.required::after {
+  content: '*';
+  color: red;
+  font-weight: bold;
+}
+
+input,
+input:focus {
+  border: 1px solid gray;
+  border-radius: 8px;
+  min-height: 26px;
+  outline: none;
+  padding: 2px 8px;
 }
