@@ -3,6 +3,9 @@ function setup () {
   let lat
   let lon
 
+  const video = createCapture(VIDEO)
+  video.size(320, 240)
+
   if ('geolocation' in navigator) {
     console.log('Yeah! Geolocation is available!')
 
@@ -17,9 +20,13 @@ function setup () {
     console.log('Looks like geolocation is not available')
   }
 
+  // Event handler
   const button = document.getElementById('submitButton')
   button.addEventListener('click', async event => {
     const mood = document.getElementById('mood')
+
+    video.loadPixels()
+    const image64 = video.canvas.toDataURL()
 
     if (!mood.value) {
       mood.classList.add('error')
@@ -33,7 +40,7 @@ function setup () {
     lat = Number(document.getElementById('latitude').innerHTML)
     lon = Number(document.getElementById('longitude').innerHTML)
 
-    const data = { lat, lon, moody }
+    const data = { lat, lon, moody, image64 }
     const options = {
       method: 'POST',
       headers: {

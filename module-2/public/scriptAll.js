@@ -11,13 +11,17 @@ async function getData () {
     geo.classList.add('geo')
     const date = document.createElement('div')
     date.classList.add('date')
+    const imag = document.createElement('img')
+    imag.classList.add('image')
+
 
     mood.textContent = `mood: ${item.moody}`
     geo.textContent = `Geolocation - Lat ${item.lat.toFixed(2)}° Lon ${item.lon.toFixed(2)}°`
     const dateString = new Date(item.timestamp).toLocaleString()
     date.textContent = dateString
+    imag.src = item.image64
 
-    root.append(mood, geo, date)
+    root.append(mood, geo, date, item.image64 ? imag : '')
     document.body.append(root)
   }
 }

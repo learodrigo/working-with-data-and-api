@@ -81,6 +81,11 @@ button {
   font-size: 0.75rem;
 }
 
+.image {
+  margin-top: 16px;
+  width: 60%;
+}
+
 .paragraph {
   display: block;
   font-size: 1.2rem;
