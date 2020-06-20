@@ -20,3 +20,5 @@ The course is divided in 3 sections:
   3. Use of JSON to preview the current location of ISS with leafletjs
 2. The Data Selfie App
 3. The Weather Here
+
+Complete Syllabus can be found in [official repo from the course](https://github.com/CodingTrain/Intro-to-Data-APIs-JS/blob/source/README.md)
