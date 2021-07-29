@@ -1,0 +1,33 @@
+{
+  "name": "working-with-data-and-api",
+  "version": "1.0.0",
+  "description": "This is a selfie app develop by Joey Lee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learodrigo/working-with-data-and-api.git"
+  },
+  "keywords": [
+    "example",
+    "data",
+    "selfie",
+    "ssjs",
+    "node",
+    "javascript"
+  ],
+  "author": "Lea Rodrigo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/learodrigo/working-with-data-and-api/issues"
+  },
+  "homepage": "https://github.com/learodrigo/working-with-data-and-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
+  }
+}
